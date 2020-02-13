@@ -3,8 +3,8 @@ const logger = require('morgan');
 const mongoose = require('mongoose');
 const PORT = process.env.PORT || 3000;
 const app = express();
-const apiroutes = require("./routes/apiroutes.js");
-const htmlroutes = require("./routes/htmlroutes.js");
+const apiroutes = require("./routes/api-routes.js");
+const htmlroutes = require("./routes/html-routes.js");
 
 app.use(logger('dev'));
 app.use(express.urlencoded({ extended: true }));
